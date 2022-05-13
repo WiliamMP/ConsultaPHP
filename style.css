@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  font-size: 62.5%;
+  --table-line-color: rgb(148, 148, 148);
+  --table-background-color: rgb(245, 245, 245);
+  --table-hover-color: rgb(225,225,225);
+}
+
+*{
+  font-size: 1.6rem;
+  font-family: 'Fira Sans';
+}
+
+h1{
+  font-size: 3.6rem;
+}
+
+th{
+  font-size: 2.5rem;
+  background-color: rgb(14, 205, 138);
+  color: white;
+}
+
+
+
+table{
+  border-collapse: collapse;
+  width: 50rem;
+  height: 50rem;
+  
+}
+td{
+  text-align: center;
+  font-size: 2rem;
+}
+
+tr{
+  border: .1rem solid black;
+  background-color:var(--table-background-color);
+}
+
+div{
+  margin: auto;
+  width: 50rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-top: 4rem;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+button{
+  border: none;
+}
+
+.btn-delete{
+  background-color: rgb(245, 10, 10);
+}
+.btn-modify{
+  background-color: rgb(255, 100, 10);
+}
+
+.btn-delete:hover{
+  background-color: rgb(225, 10, 10);
+}
+.btn-modify:hover{
+  background-color: rgb(235, 100, 10);
+}
+
+/*THEADER*/
+/* th:nth-child(1){
+  border-right: .1rem solid black;
+}
+th:nth-child(3){
+  border-left: .1rem solid black;
+}
+th:nth-child(4){
+  border-left: .1rem solid black;
+} */
+
+/*ROW*/
+tr:nth-last-child(1){
+  border-bottom: .1rem solid black;
+}
+
+tr:nth-child(1){
+  border-bottom: .2rem solid rgb(14, 195, 138);
+  
+}
+/*Efeito listra table*/
+tr:nth-child(even){
+  background-color: rgb(235,235,235);
+}
+
+tr:hover{
+  background-color: var(--table-hover-color);
+}
+
+tr:nth-child(1){
+  background-color: var(--table-background-color);
+}
