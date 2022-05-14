@@ -1,7 +1,7 @@
 <?php
 function executaInclusao(){
   echo 'executando inclusao de dados...<br><br><br>';
-    require_once ("core/Query.php");
+    require_once ("../core/Query.php");
     /* @var $oQuery Query */
 
       $oQuery = new Query();
@@ -14,7 +14,8 @@ function executaInclusao(){
       
      $codigo_produto = $aDados["codigo"];
      $descricao = $_POST["descricao"];
-     $preco     = $_POST["preco"];
+     $preco     = str_replace(',','.',$_POST["preco"]);
+     
      
  echo 'proximo codigo do produto: ' . $codigo_produto;
  
@@ -24,7 +25,7 @@ function executaInclusao(){
 
       
     // Chama a tela de consulta
-    header('Location: consulta.php?acao=CONSULTA');
+    header('Location: ../consulta.php?acao=CONSULTA');
 }
 if(isset($_POST["acao"])){
   // faz algo

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  font-size: 62.5%;
+}
+
+.menu-suspenso {
+  width: 35rem;
+  height: 15rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+  margin: auto;
+  
+  
+  border: 1px solid red;
+  background-color: white;
+  font-family: 'Fira Sans';
+}
+.ativo{
+  visibility: visible;
+  z-index: 9;
+}
+.suspenso-content form{
+  display: flex;
+}
+.suspenso-header header{
+  display: flex;
+  align-items: center;
+}
+
+div.suspenso-header{
+  margin: 0;
+  border: none;
+}
+
+
+.suspenso-header {
+  display: flex;
+  width: 35rem;
+  height: auto;
+
+
+  background-color: red;
+  color: #fff;
+
+  font-size: 2.0rem;
+  
+}
+
+.a-suspenso{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 17rem;
+}
+
+.suspenso-header h1{
+  margin: 0;
+}
+
+
+div.suspenso-content{
+  border: none;
+}
+.suspenso-content {
+  width: 35rem;
+  margin-top: 2.5rem;
+  height: 6rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: #fff;
+  font-size: 1.6rem;
+  border: none;
+  margin-bottom: 5px;
+}
+.suspenso-content label{
+  font-size: 1.8rem;
+}
+.suspenso-content input{
+  background-color: red;
+}
+.suspenso-content button{
+  background-color: greenyellow;
+}

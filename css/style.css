@@ -102,3 +102,12 @@ tr:hover{
 tr:nth-child(1){
   background-color: var(--table-background-color);
 }
+
+.centraliza{
+  text-align: center;
+}
+
+.a-redirecionar{
+  color: blue;
+  text-decoration: underline;
+}
