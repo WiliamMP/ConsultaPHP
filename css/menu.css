@@ -53,6 +53,7 @@ form{
   background-color: rgb(14, 205, 138);
   color: #fff;
 }
+
 .a-close{
   text-decoration: none;
   color: #fff;
@@ -70,6 +71,7 @@ form{
   height: 3rem;
   border-radius: 103px;
 }
+
 .btn-submit:hover{
   background-color: rgb(14, 195, 138);
 }

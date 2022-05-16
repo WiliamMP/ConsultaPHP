@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --primary-color: rgb(14, 205, 138);
+
+  --primary-color-hover: rgb(13, 185, 125);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.div-header-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  height: 7.5rem;
+  align-items: center;
+}
+
+.header-logo-div .logo{
+  font-size: 3.2rem;
+
+}
+
+.header-content-div {
+  width: auto;
+  
+}
+
+.a-header{
+  color: white;
+  text-decoration: none;
+  font-size: 2.2rem;
+  background-color: var(--primary-color);
+  padding-top: 7.5rem;
+  padding-bottom: 1.8rem;
+}
+
+.header-content-div .padding-color{
+  padding-top: 7.5rem;
+  padding-bottom: 2.3rem;
+}
+
+.a-header:hover{
+  background-color: var(--primary-color-hover);
+}

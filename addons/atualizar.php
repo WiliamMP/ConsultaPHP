@@ -16,7 +16,7 @@ require_once ("core/Query.php");
     $aDadosProdutos = $oQuery->selectAll($sql);
 
 if(@$_POST['acao'] === 'EXECUTA_ALTERACAO'){
-  $codigo = $_POST['codigo'];
+  $codigo = $_POST['codigo-hidden'];
   $descr  = $_POST['descricao'];
   $prec   = str_replace(',','.',$_POST['preco']);
 
@@ -57,8 +57,9 @@ if ($method === 'alterar') {
                 </div>
                 <form action="consulta.php?atualizar=true" method="POST">
                 <input id="acao" name="acao" type="hidden" value="EXECUTA_ALTERACAO">
+                <input id="codigo-hidden" name="codigo-hidden" type="hidden" value="'.$codigo.'">
                 <label for="codigo">Código:</label>
-                <input class="cod" type="text" placeholder="Código" id="codigo" name="codigo" value="'.$codigo.'">
+                <input class="cod" type="text" placeholder="Código" id="codigo" name="codigo" disabled value="'.$codigo.'">
                 <br>
                   <label for="descricao">Descrição:</label>
                   <input class="desc" placeholder="Descrição" id="descricao" name="descricao" value="'.$descricao.'" type="text">

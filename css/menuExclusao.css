@@ -21,13 +21,16 @@
   background-color: white;
   font-family: 'Fira Sans';
 }
+
 .ativo{
   visibility: visible;
   z-index: 9;
 }
+
 .suspenso-content form{
   display: flex;
 }
+
 .suspenso-header header{
   display: flex;
   align-items: center;
@@ -66,6 +69,7 @@ div.suspenso-header{
 div.suspenso-content{
   border: none;
 }
+
 .suspenso-content {
   width: 35rem;
   margin-top: 2.5rem;
@@ -82,12 +86,15 @@ div.suspenso-content{
   border: none;
   margin-bottom: 5px;
 }
+
 .suspenso-content label{
   font-size: 1.8rem;
 }
+
 .suspenso-content input{
   background-color: red;
 }
+
 .suspenso-content button{
   background-color: greenyellow;
 }

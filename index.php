@@ -1,5 +1,8 @@
 <?php
 
+require("website/head.php");
+require("website/header.php");
+
 $html_cadastro = '
             <link rel="stylesheet" href="css/style.css">
               <div class="insert" style="margin-left: 100px;">
@@ -30,3 +33,5 @@ $html_cadastro = '
 ';
 
 echo $html_cadastro;
+
+require ("website/final-head.php");

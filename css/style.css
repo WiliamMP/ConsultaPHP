@@ -30,6 +30,7 @@ table{
   height: 50rem;
   
 }
+
 td{
   text-align: center;
   font-size: 2rem;
@@ -40,14 +41,20 @@ tr{
   background-color:var(--table-background-color);
 }
 
-div{
+.data-info { 
   margin: auto;
   width: 50rem;
   border: 1px solid black;
   border-radius: 6px;
   margin-top: 4rem;
 }
-a{
+
+/* a{
+  text-decoration: none;
+  color: #fff;
+} */
+
+.a-btn {
   text-decoration: none;
   color: #fff;
 }

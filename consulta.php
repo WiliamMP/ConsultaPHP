@@ -1,8 +1,11 @@
 <?php
 
   require_once ("core/Query.php");
+  require_once ("website/head.php");
+  require_once ("website/header.php");
   require_once ("addons/atualizar.php"); // Require para atualizar o produto
   require_once ("addons/excluir.php"); // Require para Excluir o produto
+  
 
 
   
@@ -30,9 +33,9 @@ $html_dados_consulta .= '
                       <td>'.$produto['descricao'].'</td>
                       <td>R$'.str_replace('.',',',$produto['preco']).'</td>
                         <td>
-                          <button class="btn-delete" id="delete" onclick="abrirMenuExclusao()"><a href="?method=delete&codigo='.$produto['codigo'].'&descricao='.$produto['descricao'].'&preco='.str_replace('.',',',$produto['preco']).'">Deletar</a></button>
+                          <button class="btn-delete" id="delete" onclick="abrirMenuExclusao()"><a class="a-btn" href="?method=delete&codigo='.$produto['codigo'].'&descricao='.$produto['descricao'].'&preco='.str_replace('.',',',$produto['preco']).'">Deletar</a></button>
                           
-                          <button class="btn-modify" id="modify" onclick="Abrirmenu()"><a href="?method=alterar&codigo='.$produto['codigo'].'&descricao='.$produto['descricao'].'&preco='.str_replace('.',',',$produto['preco']).'">Alterar</a></button>
+                          <button class="btn-modify" id="modify" onclick="Abrirmenu()"><a class="a-btn" href="?method=alterar&codigo='.$produto['codigo'].'&descricao='.$produto['descricao'].'&preco='.str_replace('.',',',$produto['preco']).'">Alterar</a></button>
                         </td>
                     </tr>
 
